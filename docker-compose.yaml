@@ -1,10 +1,7 @@
 services:
   postiz:
-    build:
-      context: ./
-      dockerfile: Dockerfile
+    image: 'ghcr.io/gitroomhq/postiz-app:v1.61.2'
     environment:
-      - NIXPACKS_NODE_VERSION=22.12.0
       - 'SERVICE_URL_POSTIZ_5000=https://postiz.dev.biralo.studio:5000'
       - 'MAIN_URL=${SERVICE_URL_POSTIZ}'
       - 'FRONTEND_URL=${SERVICE_URL_POSTIZ}'
