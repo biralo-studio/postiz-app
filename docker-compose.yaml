@@ -76,7 +76,7 @@ services:
     healthcheck:
       test:
         - CMD-SHELL
-        - 'wget -qO- http://127.0.0.1:4200/'
+        - 'wget -qO- http://127.0.0.1:5000/'
       interval: 5s
       timeout: 20s
       retries: 10
